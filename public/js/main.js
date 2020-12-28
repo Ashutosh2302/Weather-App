@@ -4,14 +4,14 @@ const city_name=document.getElementById('city_name')
 const temp_value=document.getElementById('temp_value')
 const symbol=document.getElementById('symbol')
 
-const datahide = document.querySelector('.middle_layer')
+const datahide = document.querySelector('.middle_layer');
 
 const getInfo = async(event) =>{
     event.preventDefault()
     let cityVal=cityname.value
     if(cityVal===""){
-        city_name.innerText="Empty search"
-        datahide.classList.add('data_hide')
+        city_name.innerText="Empty search";
+        datahide.classList.add('data_hide');
     }else{
         try{
             let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&APPID=3e2d927d4f28b456c6bc662f34350957`

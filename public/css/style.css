@@ -204,3 +204,6 @@ footer p{
 ::placeholder{
     font-size: 2rem;
 }
+.main_layer .data_hide{
+    display:none;
+}
